@@ -14,7 +14,7 @@
   height: 100%;
 }
 
-.containerLeft__photoCover > img {
+.containerLeft__photoCover > a > img {
   width: 450px;
   min-width: 450px;
   height: 100%;
@@ -44,18 +44,25 @@
   color: #71747A;
 }
 
-.containerRight__title {
-  font-weight: 700;
-  font-size: 18px;
+.containerRight__title{
   margin-bottom: 10px;
 }
 
-.containerRight__description{
-  color: #71747A;
+.containerRight__title > a > h1 {
+  font-weight: 700;
+  font-size: 36px;
+  color: black;
+}
+
+.containerRight__description {
   margin-bottom: 15px;
 }
 
-.containerRight__contentInfo {
+.containerRight__description > a > p{
+  color: #71747A;
+}
+
+.containerRight__contentInfo > p {
   color: #71747A;
 }
 
