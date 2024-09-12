@@ -1,0 +1,38 @@
+header {
+  margin-bottom: 10px;
+}
+
+.welcome-card {
+  margin-bottom: 50px;
+}
+
+.big-card {
+  margin-bottom: 30px;
+}
+
+.small-cards {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: auto;
+}
+
+.small-cards__title {
+  margin-bottom: 20px;
+}
+
+.small-cards__title > h1 {
+  font-size: 28px;
+}
+
+.small-cards__contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.small-cards__contents > app-small-card{
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
