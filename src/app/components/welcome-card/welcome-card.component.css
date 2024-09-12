@@ -1,0 +1,31 @@
+*{
+ background-color: #e7e3e3;
+ 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 150px;
+  border-radius: 15px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.container span {
+  color: red;
+  font-weight: 700;
+}
+
+.container__welcome {
+  display: flex;
+  flex-direction: row;
+}
+
+.container__welcome > p {
+  margin-right: 18px;
+  color: rgb(114, 111, 111);
+}
+
