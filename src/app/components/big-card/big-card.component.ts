@@ -24,5 +24,7 @@ export class BigCardComponent {
   contentGenre:string = 'N/A'
   @Input()
   timeReading:string = '1'
+  @Input()
+  id:string = '0'
   constructor(){}
 }

@@ -24,5 +24,7 @@ export class SmallCardComponent {
   contentGenre:string = 'N/A'
   @Input()
   timeReading:string = '1'
+  @Input()
+  id:string = '0'
   constructor(){}
 }

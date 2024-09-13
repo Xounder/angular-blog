@@ -1,7 +1,7 @@
 <div class="container">
   <div class="container__containerLeft">
     <div class="containerLeft__photoCover">
-      <a [routerLink]="['content']">
+      <a [routerLink]="['content', id]">
         <img
         src="{{ photoCover }}"
         >
@@ -16,13 +16,13 @@
     </div>
 
     <div class="containerRight__title">
-      <a [routerLink]="['content']">
+      <a [routerLink]="['content', id]">
         <h1>{{ title }}</h1>
       </a>
     </div>
 
     <div class="containerRight__description">
-      <a [routerLink]="['content']">
+      <a [routerLink]="['content', id]">
         <p>{{ description }}</p>
       </a>
     </div>
