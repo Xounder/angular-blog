@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-small-card',
@@ -8,5 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './small-card.component.css'
 })
 export class SmallCardComponent {
-
+  // default params
+  @Input()
+  photoCover:string = 'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+  @Input()
+  title:string = ''
+  @Input()
+  description:string = ''
+  @Input()
+  providerPhoto:string = 'https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/no-profile-picture-icon.png'
+  @Input()
+  providerName:string = 'Anonymous'
+  @Input()
+  contentGenre:string = 'N/A'
+  @Input()
+  timeReading:string = '1'
+  constructor(){}
 }

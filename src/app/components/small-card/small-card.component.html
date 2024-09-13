@@ -3,8 +3,7 @@
     <div class="containerLeft__photoCover">
       <a href="">
         <img
-        src="https://play-lh.googleusercontent.com/yQZY4_t6ONTssFPktc015iZyxHGRyLJ5oFdV8p0Z_H9IBCOxkpKxuJyqk6T1FZrHEBruL44tdBqn4-K9dcE=w240-h480-rw"
-        alt="Jhon WIck"
+        src="{{ photoCover }}"
         >
       </a>
     </div>
@@ -12,24 +11,24 @@
 
   <div class="container__containerRight">
     <div class="containerRight__provider">
-      <img src="https://cdn-icons-png.flaticon.com/128/5968/5968617.png" alt="">
-      <p>Netflix</p>
+      <img src="{{ providerPhoto }}">
+      <p>{{ providerName }}</p>
     </div>
 
     <div class="containerRight__title">
       <a href="">
-        <h1>Where To Watch 'John Wick: Chapter 4' in theaters</h1>
+        <h1>{{ title }}</h1>
       </a>
     </div>
 
     <div class="containerRight__description">
       <a href="">
-        <p>Lorem asdasas asdasdasas asdas as Lorem asdasas asdas asm asdasas asdas asLorem asdasas asdas as Lorem asdasas asdas as Lorem asdasas asdas assada sdasda Lorem asdasas asdas asd sada sdasda Lorem asdasas asdas asd sada sdasda</p>
+        <p>{{ description }}</p>
       </a>
     </div>
 
     <div class="containerRight__contentInfo">
-      <p><span>Movies</span> - 4 min read</p>
+      <p><span>{{ contentGenre }}</span> - {{timeReading}} min read</p>
     </div>
   </div>
 </div>

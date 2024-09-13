@@ -3,11 +3,6 @@
   flex-direction: column;
   width: 200px;
   min-height: 500px;
-  max-height: 800px;
-}
-
-.container__containerLeft {
-  margin: auto;
 }
 
 .containerLeft__photoCover > a > img {
@@ -19,7 +14,6 @@
 .container__containerRight {
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
 
 .containerRight__provider {
