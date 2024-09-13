@@ -18,7 +18,7 @@ A ***fake repository (dataFake)*** was used to dynamically insert content into t
 
 >[!NOTE]
 >
->Layout used to create the blog available [here](.idea)
+>Layout used to create the blog available [here](idea)
 
 
 
@@ -39,4 +39,4 @@ Foi utilizado um ***repositorio falso (dataFake)*** para a inserção dinâmica 
 
 >[!NOTE]
 >
->Layout utilizado para a criação do blog disponível [aqui](.idea)
+>Layout utilizado para a criação do blog disponível [aqui](idea)
