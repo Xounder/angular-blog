@@ -1,27 +1,37 @@
-# AngularBlog
+# Buletin Blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.3.
+## ENG
 
-## Development server
+A blog created with  **Angular** framework
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Base components were used to create the pages:
 
-## Code scaffolding
+- Large Card
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Small Card
 
-## Build
+- Menu bar
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Welcome card
 
-## Running unit tests
+A ***fake repository (dataFake)*** was used to dynamically insert content into the content page
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+>[!NOTE]Layout used to create the blog available [here](.idea)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## PT-BR
+Um blog criado com o framework **Angular**
 
-## Further help
+Utilizou-se de componentes base para a criação das páginas:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Big-Card
+
+- Small-Card
+
+- Menu-Bar
+
+- Welcome-Card
+
+Foi utilizado um ***repositorio falso (dataFake)*** para a inserção dinâmica dos conteúdos na página content
+
+>[!NOTE]Layout utilizado para a criação do blog disponível [aqui](.idea)
