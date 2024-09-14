@@ -4,6 +4,8 @@ import { SmallCardComponent } from '../../components/small-card/small-card.compo
 import { MenuBarComponent } from '../../components/menu-bar/menu-bar.component'
 import { WelcomeCardComponent } from '../../components/welcome-card/welcome-card.component'
 
+import { dataFake } from '../../data/data-fake';
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -17,5 +19,5 @@ import { WelcomeCardComponent } from '../../components/welcome-card/welcome-card
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  dataFake:any = dataFake
 }

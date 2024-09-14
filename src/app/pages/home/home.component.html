@@ -4,14 +4,14 @@
 
 <div class="big-card">
   <app-big-card
-  id="1"
-  photoCover="https://play-lh.googleusercontent.com/yQZY4_t6ONTssFPktc015iZyxHGRyLJ5oFdV8p0Z_H9IBCOxkpKxuJyqk6T1FZrHEBruL44tdBqn4-K9dcE=w240-h480-rw"
-  title="Where To Watch John Wick: Chapter 4 in theaters"
-  description="Lorem asdasas asdasdasas asdas as Lorem asdasas asdas asm asdasas asdas asLorem asdasas asdas as Lorem asdasas asdas as Lorem asdasas asdas assada sdasda Lorem asdasas asdas asd sada sdasda Lorem asdasas asdas asd sada sdasda"
-  providerPhoto="https://cdn-icons-png.flaticon.com/128/5968/5968617.png"
-  providerName="Netflix"
-  contentGenre="Movies"
-  timeReading="4"
+  [id]="dataFake[0].id"
+  [photoCover]="dataFake[0].photo"
+  [title]="dataFake[0].title"
+  [description]="dataFake[0].description"
+  [providerPhoto]="dataFake[0].providerPhoto"
+  [providerName]="dataFake[0].providerName"
+  [contentGenre]="dataFake[0].contentGenre"
+  [timeReading]="dataFake[0].timeReading">
   >
 </app-big-card>
 </div>
@@ -21,57 +21,20 @@
     <h1>Latest News</h1>
   </div>
   <div class="small-cards__contents">
-    <app-small-card
-    id="2"
-    photoCover="https://s2-ge.glbimg.com/6yglJuZnbRdZACM2l66DGJ_0Pc4=/0x0:3840x2160/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/a/m/rqxpoiSTq3ZYmqO0XCaA/432743-1091821-stock-reveal-carro-novo.jpg"
-    title="Racing Cars Contests"
-    description="Lorem asdasas asdasm asdasas asdas as Lorem asdasas asdas assada sdasda Lorem asdasas asdas asd sada sdasda Lorem asdasas asdas asd sada sdasda"
-    providerPhoto="https://cdn-icons-png.flaticon.com/128/5968/5968617.png"
-    providerName="Netflix"
-    contentGenre="Racing"
-    timeReading="7"
-    >
-    </app-small-card>
-    <app-small-card
-    id="3"
-    photoCover="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8dIrCGBbKP7JwG5xsvyz1mcYHT1bxO7JQcg&s"
-    title="Marvel Annoucement"
-    description="Lorem asdasas asdasm asdasas asdas as Lorem asdasas asdas assada sdasda Lorem asdasas asdas asd sada"
-    providerPhoto="https://img.favpng.com/1/16/3/marvel-icon-cinema-and-tv-icon-fUbCzY8M.jpg"
-    providerName="Marvel"
-    contentGenre="Movies"
-    timeReading="7"
-    >
-    </app-small-card>
-    <app-small-card
-    id="4"
-    photoCover="https://media.gazetadopovo.com.br/2024/01/31131006/homem-lendo-jornal--960x540.jpg"
-    title="Reading the News"
-    description="Lorem asdasas asdasm asdasas asdas as Lorem asdasas asdas assada sdasda Lorem asdasas asdas asd sada"
-    contentGenre="News"
-    timeReading="10"
-    >
-    </app-small-card>
-    <app-small-card
-    id="5"
-    photoCover="https://assets.goal.com/images/v3/blta9c75526bcc86f53/January_Transfer_Grades.jpg?auto=webp&format=pjpg&width=3840&quality=60"
-    title="Soccer Transfers in September"
-    description="Lorem asdasas asdasm asdasas asdas as Lorem asdasas asdas assada sdasda Lorem asdasas asdas asd sada"
-    providerName="Trader"
-    contentGenre="Soccer"
-    timeReading="5"
-    >
-    </app-small-card>
-    <app-small-card
-    id="6"
-    photoCover="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDK8o6lXlSllaAQ2LFj_K6jOm4gHzzR_VspQ&s"
-    title="Marvel HQs in sale"
-    description="Lorem asdasas asdasm asdasas asdas as Lorem asdasas asdas assada sdasda Lorem asdasas asdas asd sada"
-    providerPhoto="https://img.favpng.com/1/16/3/marvel-icon-cinema-and-tv-icon-fUbCzY8M.jpg"
-    providerName="Marvel"
-    contentGenre="HQ"
-    timeReading="7"
-    >
-    </app-small-card>
+    @for (t of dataFake; track $index) {
+      @if ($index > 0) {
+        <app-small-card
+        [id]="t.id"
+        [photoCover]="t.photo"
+        [title]="t.title"
+        [description]="t.description"
+        [providerPhoto]="t.providerPhoto"
+        [providerName]="t.providerName"
+        [contentGenre]="t.contentGenre"
+        [timeReading]="t.timeReading">
+        >
+        </app-small-card>
+      }
+    }
   </div>
 </div>
