@@ -34,7 +34,7 @@ export const dataFake = [
     'providerPhoto': 'https://img.favpng.com/1/16/3/marvel-icon-cinema-and-tv-icon-fUbCzY8M.jpg',
     'providerName': 'Marvel',
     'contentGenre': 'Movies',
-    'timeReading': '7'
+    'timeReading': '7 min'
   },
   {
     'id': '4',

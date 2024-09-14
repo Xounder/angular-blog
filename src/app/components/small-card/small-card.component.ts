@@ -11,20 +11,39 @@ import { RouterModule } from '@angular/router';
 export class SmallCardComponent {
   // default params
   @Input()
-  photoCover:string = 'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+  photoCover:string = ''
   @Input()
   title:string = ''
   @Input()
   description:string = ''
   @Input()
-  providerPhoto:string = 'https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/no-profile-picture-icon.png'
+  providerPhoto:string = ''
   @Input()
-  providerName:string = 'Anonymous'
+  providerName:string = ''
   @Input()
-  contentGenre:string = 'N/A'
+  contentGenre:string = ''
   @Input()
-  timeReading:string = '1'
+  timeReading:string = ''
   @Input()
   id:string = '0'
+  
   constructor(){}
+
+  ngOnInit():void {
+    if (!this.photoCover){
+      this.photoCover = 'https://img.freepik.com/premium-vector/default-image-icon-vector-missing-picture-page-website-design-mobile-app-no-photo-available_87543-11093.jpg'
+    }
+    if (!this.providerPhoto){
+      this.providerPhoto = 'https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/no-profile-picture-icon.png'
+    }
+    if (!this.providerName){
+      this.providerName = 'Anonymous'
+    }
+    if (!this.contentGenre){
+      this.contentGenre = 'N/A'
+    }
+    if (!this.timeReading){
+      this.timeReading = '1 min'
+    }
+  }
 }
