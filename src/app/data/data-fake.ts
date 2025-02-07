@@ -6,7 +6,7 @@ export const dataFake = [
   {
     'id': '1',
     'title': 'Where To Watch John Wick: Chapter 4 in theaters',
-    'photo': 'https://play-lh.googleusercontent.com/yQZY4_t6ONTssFPktc015iZyxHGRyLJ5oFdV8p0Z_H9IBCOxkpKxuJyqk6T1FZrHEBruL44tdBqn4-K9dcE=w240-h480-rw',
+    'photo': 'https://clube-static.clubegazetadopovo.com.br/portal/wp-content/uploads/2023/03/John-Wick-01.jpg',
     'content': contet,
     'description': description,
     'providerPhoto': 'https://cdn-icons-png.flaticon.com/128/5968/5968617.png',
